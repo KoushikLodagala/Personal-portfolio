@@ -13,7 +13,7 @@ const Projects = () => {
       description: 'A full-stack MERN application with Redux state management and AWS deployment.',
       image: travelApp,
       technologies: ['React', 'Node.js', 'MongoDB', 'Redux', 'AWS'],
-      github: 'https://github.com',
+      github: 'https://github.com/KoushikLodagala',
       live: 'https://example.com',
     },
     {
@@ -21,15 +21,15 @@ const Projects = () => {
       description: 'Modern social networking platform built with MERN stack and real-time features.',
       image: foodapp,
       technologies: ['React', 'Express.js', 'MongoDB', 'Socket.io', 'Node.jS'],
-      github: 'https://github.com',
-      live: 'https://example.com',
+      github: 'https://github.com/KoushikLodagala',
+      live: 'https://react-foodie-backend-dash-board-hi5q-rkuwgzmd7.vercel.app/',
     },
     {
       title: 'Portfolio',
       description: 'Advanced calculator application with React and Redux integration.',
       image: portfolioapp,
       technologies: ['React', 'Redux', 'Node.js', 'Express.js'],
-      github: 'https://github.com',
+      github: 'https://github.com/KoushikLodagala',
       live: 'https://example.com',
     },
   ];
