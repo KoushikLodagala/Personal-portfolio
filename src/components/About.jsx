@@ -45,9 +45,7 @@ const About = () => {
                 About Me
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-6">
-                I'm a passionate MERN Stack Developer with expertise in building
-                modern web applications. I specialize in creating responsive, user-friendly
-                interfaces using React and implementing robust backend solutions with Node.js.
+              I am a passionate MERN Stack Developer with a strong foundation in React.js. I excel at crafting high-performance, user-centric web applications utilizing React's component-based architecture and state management solutions like Redux. I have a deep understanding of React's core concepts, including JSX, components, props, and state management, and I effectively leverage these concepts to build scalable and maintainable applications.
               </p>
               <p className="text-gray-600 dark:text-gray-400 mb-6">
                 My experience includes working with Redux for state management, AWS for cloud solutions,
