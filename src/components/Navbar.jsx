@@ -1,8 +1,8 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import profileImage from '../assets/images/profile.jpg';
 import profileimg from '../assets/images/profileimg/klogo.jpeg';
 
 const Navbar = () => {
@@ -16,10 +16,16 @@ const Navbar = () => {
     { name: 'Contact', path: '/contact' },
   ];
 
+  const toggleTheme = () => {
+    console.log('Toggle Theme'); // replace with your theme toggle logic
+  };
+
   return (
     <nav className="fixed w-full bg-white dark:bg-gray-900 shadow-lg z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
+          
+          {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center space-x-2">
               <img 
@@ -34,16 +40,27 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.path}
-                className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
-              >
-                {item.name}
-              </Link>
-            ))}
+          <div className="hidden md:flex items-center -ml-8">
+            {/* Nav Items */}
+            <div className="flex items-center space-x-8">
+              {navItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+
+            {/* Theme Toggle */}
+            <button
+              className="ml-6 text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400"
+              onClick={toggleTheme}
+            >
+              🌙
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -77,6 +94,13 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
+            {/* Mobile Theme Toggle */}
+            <button
+              className="mt-2 block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400"
+              onClick={toggleTheme}
+            >
+              🌙
+            </button>
           </div>
         </motion.div>
       )}

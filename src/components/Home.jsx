@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import profileImage from '../assets/images/profile.jpg';
 import heroBg from '../assets/images/hero-bg.jpg';
-import profileimg from '../assets/images/profileimg/mypic.png';
+// import profileimg from '../assets/images/profileimg/mypic.png';
+import profileimg from '../assets/images/profileimg/suit bw.jpg';
 
 const Home = () => {
   return (
